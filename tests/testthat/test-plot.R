@@ -16,7 +16,7 @@ test_that(
 )
 
 test_that(
-  "The accel_plot() is correct for time-series data.",
+  "The accel_plot() is correct for time-series data.xy",
   {
     data(ukb_accel)
     p = accel_plot(ukb_accel[1:100,])
