@@ -43,19 +43,19 @@ test_that(
 
 
 test_that(
-  "The accel_plot() is correct for time-series data.xy",
+  "The accel_plot() returns a tiible data frame object.",
   {
     data(ukb_accel)
-    s <- spectral_signature(ukb_accel[1:100,], take_log = TRUE)
+    s <- spectral_signature(ukb_accel[1:100, ], take_log = TRUE)
     expect_true(inherits(s, "tbl_df"))
   }
 )
 
 test_that(
-  "The accel_plot() is correct for time-series data.xy",
+  "The accel_plot() returns a tiible data frame object.",
   {
     data(ukb_accel)
-    s <- spectral_signature(ukb_accel[1:100,], take_log = FALSE)
+    s <- spectral_signature(ukb_accel[1:100, ], take_log = FALSE)
     expect_true(inherits(s, "tbl_df"))
   }
 )
@@ -63,4 +63,4 @@ test_that(
 
 
 
-#covr:: report()
+
