@@ -12,8 +12,7 @@ Imports:
   dplyr,
   ggplot2,
   purrr,
-  tidyr,
-  vdiffr
+  tidyr
 Roxygen: list(markdown = TRUE)
 Depends: 
   R (>= 4.2)

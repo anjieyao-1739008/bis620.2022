@@ -22,10 +22,10 @@ spectral_signature <- function(x, take_log = FALSE, inverse = TRUE) {
     ~ fft(.x, inverse = inverse) |> Mod()
   )
   if (take_log) {
-    ret = ret |>
+    ret <- ret |>
       mutate_at(vars(X, Y, Z), log)
   }
-  ret <- ret[seq_len(ceiling(nrow(ret)/2)), ]
+  ret <- ret[seq_len(ceiling(nrow(ret) / 2)), ]
   longest_period <-
     as.numeric(difftime(max(x$time), min(x$time), units = "secs"))
   xt <- x$time[1:2]
