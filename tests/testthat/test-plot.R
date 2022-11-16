@@ -59,8 +59,3 @@ test_that(
     expect_true(inherits(s, "tbl_df"))
   }
 )
-
-
-
-
-
