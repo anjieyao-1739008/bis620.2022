@@ -13,9 +13,9 @@
 #' @export
 accel_plot <- function(x) {
   if ("time" %in% colnames(x)) {
-    col <- "time"
+    col <- as.symbol("time")
   } else if ("freq" %in% colnames(x)) {
-    col <-  "freq"
+    col <-  as.symbol("freq")
   } else {
     stop("A `time` or a `freq` column must appear in the data.")
   }
