@@ -7,8 +7,8 @@ Maintainer: The package maintainer <michael.kane@yale.edu>
 Description: Captures functions, data, and documentation for BIS620 as taught in 2022.
 License: LGPL (>= 2.1)
 Encoding: UTF-8
-LazyDataCompression:xz
-RoxygenNote: 7.2.1
+LazyDataCompression: xz
+RoxygenNote: 7.2.2
 Imports: 
   dplyr,
   ggplot2,
@@ -16,10 +16,13 @@ Imports:
   tidyr
 Roxygen: list(markdown = TRUE)
 Depends: 
-  R (>= 4.2)
+  R (>= 3.0)
 Suggests: 
     covr,
+    knitr,
+    rmarkdown,
     testthat (>= 3.0.0),
     vdiffr
 Config/testthat/edition: 3
 LazyData: true
+VignetteBuilder: knitr
